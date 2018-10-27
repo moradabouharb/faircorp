@@ -24,6 +24,12 @@ public class Light {
     public Light(){
     }
 
+    public Light(int level, String status) {
+        this.Level = level;
+        this.Status = status;
+    }
+
+
     public long getId(){
         return Light_ID;
     }
@@ -40,12 +46,12 @@ public class Light {
         this.Level = Level;
     }
 
-    public String  Getstatus(){
+    public String getstatus(){
         return Status;
     }
 
-    public void Setstatus(String Status){
-        this.Status = Status;
+    public void setstatus(String status){
+        this.Status = status;
     }
 
     public long getRoom(){
@@ -55,4 +61,5 @@ public class Light {
     public void setRoom(long Room_ID){
         this.Room_ID = Room_ID;
     }
+
 }

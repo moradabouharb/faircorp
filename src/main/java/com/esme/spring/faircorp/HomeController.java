@@ -1,6 +1,7 @@
 package com.esme.spring.faircorp;
 
 import com.esme.spring.faircorp.Model.Light;
+import com.esme.spring.faircorp.Model.Room;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,6 +14,8 @@ public class HomeController {
 
     @Autowired
     private LightDao L1;
+    @Autowired
+    private RoomDao R1;
 
     public HomeController(){
     }
@@ -35,4 +38,11 @@ public class HomeController {
     public List<Light> Getlights(){
         return L1.findAll();
     }
+
+    //http://localhost:8080/api/Building/Rooms
+    @RequestMapping(value = "Rooms",method = RequestMethod.GET, produces = "application/json")
+    public List<Room> GetRooms(){
+        return R1.findAll();
+    }
+
 }

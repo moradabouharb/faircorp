@@ -1,5 +1,7 @@
 package com.esme.spring.faircorp.Model;
 
+import jdk.nashorn.internal.ir.annotations.Ignore;
+
 import javax.persistence.*;
 import java.nio.MappedByteBuffer;
 import java.util.List;
@@ -24,6 +26,33 @@ public class Room {
     public Room(){
     }
 
-    // write getter and setter for each properity..
+    public Room(String name,int floor){
+        this.Name = name;
+        this.Floor = floor;
+    }
 
+    public String getName(){
+        return Name;
+    }
+
+    public void setName(String Name){
+        this.Name = Name;
+    }
+
+    public int getFloor(){
+        return Floor;
+    }
+
+    public void setFloor(int floor){
+        this.Floor = floor;
+    }
+/*
+    public Set<Light> getLights(){
+        return lights;
+    }
+
+    public void setlights(Set<Light>lights){
+        this.lights = lights;
+    }
+*/
 }
