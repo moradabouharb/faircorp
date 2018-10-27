@@ -24,4 +24,6 @@ public class Room {
     public Room(){
     }
 
+    // write getter and setter for each properity..
+
 }
