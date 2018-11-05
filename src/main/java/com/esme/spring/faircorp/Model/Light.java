@@ -46,11 +46,11 @@ public class Light {
         this.Level = Level;
     }
 
-    public String getstatus(){
+    public String getStatus(){
         return Status;
     }
 
-    public void setstatus(String status){
+    public void setStatus(String status){
         this.Status = status;
     }
 
