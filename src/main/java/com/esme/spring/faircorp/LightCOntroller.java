@@ -14,7 +14,7 @@ import java.util.Set;
 
 @RestController
 @RequestMapping("/api/Building/Light")
-public class HomeController {
+public class LightCOntroller {
 
     @Autowired
     private LightDao L1;
@@ -25,7 +25,7 @@ public class HomeController {
     @PersistenceContext
     private EntityManager em;
 
-    public HomeController(){
+    public LightCOntroller(){
     }
 
     //http://localhost:8080/api/Building/Light?id=1
