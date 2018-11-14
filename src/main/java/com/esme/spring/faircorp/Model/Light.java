@@ -1,5 +1,4 @@
 package com.esme.spring.faircorp.Model;
-import javafx.css.StyleableStringProperty;
 
 import javax.persistence.*;
 

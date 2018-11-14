@@ -1,10 +1,5 @@
 package com.esme.spring.faircorp.Model;
-
-import jdk.nashorn.internal.ir.annotations.Ignore;
-
 import javax.persistence.*;
-import java.nio.MappedByteBuffer;
-import java.util.List;
 import java.util.Set;
 
 @Entity
