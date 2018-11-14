@@ -57,7 +57,6 @@ public class LightCOntroller {
     }
 
 
-    //@RequestMapping(params = "addlight",method = RequestMethod.POST,produces = "application/json")
     @PostMapping("addlight")
     public ResponseEntity<Object> addlight(@RequestBody Light l){
         Light savelight = L1.save(l);
