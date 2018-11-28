@@ -64,4 +64,13 @@ public class LightCOntroller {
                 .buildAndExpand(savelight.getId()).toUri();
         return ResponseEntity.created(location).build();
     }
-}
+
+    @PutMapping(path = "/{id}/switch")
+    public void switchStatus(@PathVariable Long id, @RequestBody Light l) {
+        Light light = L1.findById(id).orElseThrow(IllegalArgumentException::new);
+            light.setStatus(l.getStatus());
+            light.setLevel(l.getLevel());
+            light.setRoom(l.getRoom());
+            L1.save(light);
+        }
+    }
